@@ -1,11 +1,9 @@
-// إخفاء اللودر بعد 3 ثوانٍ من التحميل
 window.addEventListener('load', () => {
     const loader = document.getElementById('loader');
     loader.style.opacity = '0';
-    setTimeout(() => loader.style.display = 'none', 3000);
+    setTimeout(() => loader.style.display = 'none', 5000);
   });
   
-  // تفعيل مكتبة AOS
   AOS.init({
     duration: 1000,
     once: false,
@@ -13,39 +11,49 @@ window.addEventListener('load', () => {
     easing: 'ease-in-out'
   });
   
-  // الترجمة (عربي / إنجليزي)
   const translations = {
     ar: {
+      page_title: "اتحاد طلاب تحيا مصر",
+      loading_text: "جاري تحميل الصفحة...",
       hero_title: "مرحباً بكم",
       hero_desc: "في اتحاد طلاب تحيا مصر - مجتمع طلابي للتغيير والإبداع والعمل الجماعي",
       about_title: "من نحن؟",
-      about_desc: "نحن مجموعة طلابية تهدف إلى تمكين الطلبة في مختلف المجالات وتنمية قدراتهم ومواهبهم من خلال أنشطة تعليمية وثقافية ورياضية.",
+      about_desc: "كيان شبابي غير ربحي يعمل تحت مظلة وزارة الشباب والرياضة، يهدف إلى تنمية قدرات ومهارات الشباب، وتأهيلهم لسوق العمل من خلال برامج تدريبية وتوعوية متكاملة. يأتي ذلك تماشياً مع استراتيجية مصر 2030 وأهداف التنمية المستدامة، عبر تمكين الشباب ليكونوا شركاء فاعلين في بناء مستقبل الوطن.",
       feature1: "ورش تدريبية",
-      feature2: "فعاليات طلابية",
+      feature2: "فعاليات شبابية",
       feature3: "تمثيل طلابي",
+      feature1_desc: "تمكين الشباب من اكتساب مهارات قيادية وتقنية حديثة تؤهلهم ليكونوا روّادًا في مجالاتهم ويواكبوا متطلبات سوق العمل.",
+      feature2_desc: "تنظيم فعاليات شبابية متكاملة تحت إشراف وزارة الشباب والرياضة، تهدف إلى تعزيز المشاركة المجتمعية، وتنمية الوعي الثقافي، وبناء قدرات الشباب من خلال أنشطة تعليمية، ترفيهية، ورياضية تُسهم في تمكينهم ودمجهم الفاعل في المجتمع.",
+      feature3_desc: "تمثيل شبابي فاعل يهدف إلى إيصال صوت الشباب في المحافل الكبرى محليًا ودوليًا، وتسليط الضوء على دورهم الحيوي في نهضة المجتمع وصناعة المستقبل.",
       gallery_title: "معرض الصور",
       cta_title: "انضم إلينا الآن",
       cta_desc: "شاركنا الرحلة وكن جزءاً من التغيير الحقيقي داخل الجامعة.",
       button_text: "سجّل الآن",
+      footer_text: "© 2025 اتحاد طلاب تحيا مصر. جميع الحقوق محفوظة.",
       ...Object.fromEntries(Array.from({ length: 20 }, (_, i) => [`image${i + 1}`, `صورة رقم ${i + 1}`]))
     },
     en: {
+      page_title: "Tahya Misr Student Union",
+      loading_text: "Loading the page...",
       hero_title: "Welcome",
-      hero_desc: "To the Tahya Misr Student Union – a community of change and creativity.",
+      hero_desc: "To the Tahya Misr Student Union – a student community for change, creativity, and teamwork.",
       about_title: "Who Are We?",
-      about_desc: "We are a student-led group empowering peers through cultural, academic, and leadership activities.",
+      about_desc: "A non-profit youth entity under the Ministry of Youth and Sports, aiming to develop the skills and capabilities of youth and prepare them for the labor market through integrated training and awareness programs. This aligns with Egypt's Vision 2030 and sustainable development goals.",
       feature1: "Training Workshops",
-      feature2: "Student Events",
-      feature3: "Student Representation",
+      feature2: "Youth Activities",
+      feature3: "Youth Representation",
+      feature1_desc: "Empowering youth to acquire modern leadership and technical skills that qualify them to be pioneers in their fields and meet labor market demands.",
+      feature2_desc: "Organizing comprehensive youth events under the supervision of the Ministry of Youth and Sports, aimed at enhancing community engagement, promoting cultural awareness, and building the capacities of young people through educational, recreational, and athletic activities that empower them and foster their active integration into society.",
+      feature3_desc: "Active youth representation that aims to amplify the voices of young people in major national and international forums, while highlighting their vital role in driving societal progress and shaping the future.",
       gallery_title: "Gallery",
       cta_title: "Join Us Now",
-      cta_desc: "Be part of the change inside your university.",
+      cta_desc: "Join us and be part of the real change inside your university.",
       button_text: "Apply Now",
+      footer_text: "© 2025 Tahya Misr Student Union. All rights reserved.",
       ...Object.fromEntries(Array.from({ length: 20 }, (_, i) => [`image${i + 1}`, `Image #${i + 1}`]))
     }
   };
   
-  // زر اللغة
   const langBtn = document.getElementById("langBtn");
   let currentLang = "ar";
   
@@ -55,7 +63,12 @@ window.addEventListener('load', () => {
   
     document.querySelectorAll("[data-i18n]").forEach(el => {
       const key = el.getAttribute("data-i18n");
-      el.textContent = translations[currentLang][key] || el.textContent;
+      if (translations[currentLang][key]) {
+        el.textContent = translations[currentLang][key];
+      }
     });
+  
+    document.documentElement.lang = currentLang;
+    document.documentElement.dir = currentLang === "ar" ? "rtl" : "ltr";
   });
   
