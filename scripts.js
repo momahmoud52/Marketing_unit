@@ -30,6 +30,7 @@ window.addEventListener('load', () => {
       cta_desc: "شاركنا الرحلة وكن جزءاً من التغيير الحقيقي داخل المجتمع.",
       button_text: "سجّل الآن",
       footer_text: "© 2025 اتحاد طلاب تحيا مصر. جميع الحقوق محفوظة.",
+      social_title: "منصات اتحاد طلاب تحيا مصر الرسمية",
       ...Object.fromEntries(Array.from({ length: 20 }, (_, i) => [`image${i + 1}`, `صورة رقم ${i + 1}`]))
     },
     en: {
@@ -50,6 +51,7 @@ window.addEventListener('load', () => {
       cta_desc: "Join us on the journey and be part of real change within the community.",
       button_text: "Apply Now",
       footer_text: "© 2025 Tahya Misr Student Union. All rights reserved.",
+      social_title: "Official Social Platforms of Tahya Misr Student Union",
       ...Object.fromEntries(Array.from({ length: 20 }, (_, i) => [`image${i + 1}`, `Image #${i + 1}`]))
     }
   };
