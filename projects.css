@@ -88,19 +88,15 @@
   .proj-img {
     flex: 0 0 200px;
     overflow: hidden;
-    background: #f1f1f1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
   .proj-img img {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* ✅ عرض الصورة كاملة دون اقتطاع */
+    object-fit: cover;
     transition: transform 0.4s ease;
   }
   .project:hover .proj-img img {
-    transform: scale(1.02);
+    transform: scale(1.05);
   }
   
   /* المعلومات */
