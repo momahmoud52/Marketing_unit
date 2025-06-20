@@ -3,11 +3,69 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title data-i18n="page_title">اتحاد طلاب تحيا مصر</title>
+  <title data-i18n="page_title">وحدة التسويق المركزي</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+    }
+
+    .president-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 40px auto;
+      padding: 20px;
+      max-width: 1000px;
+      background-color: #f4f4f4;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .president-img {
+      flex: 1 1 300px;
+      text-align: center;
+    }
+
+    .president-img img {
+      max-width: 100%;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .president-img img:hover {
+      transform: scale(1.05);
+    }
+
+    .president-content {
+      flex: 2 1 500px;
+      padding: 20px;
+    }
+
+    .president-name {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .president-title {
+      font-size: 18px;
+      font-weight: 500;
+      color: #555;
+      margin-bottom: 12px;
+    }
+
+    .president-message {
+      font-size: 16px;
+      line-height: 1.8;
+      color: #333;
+    }
+  </style>
 </head>
 <body>
 
@@ -26,6 +84,20 @@
     <img src="اساسي نسبي.png" alt="شعار الاتحاد" class="logo" />
     <h2 data-i18n="page_title">اتحاد طلاب تحيا مصر</h2>
   </header>
+
+  <!-- قسم رئيس الاتحاد -->
+  <section class="president-section" data-aos="fade-up">
+    <div class="president-img">
+      <img src="WhatsApp Image 2025-06-20 at 16.58.45_5291de30.jpg" alt="مصطفى قطامش - رئيس الاتحاد" />
+    </div>
+    <div class="president-content">
+        <div class="president-name" data-i18n="president_name">مصطفى قطامش</div>
+        <div class="president-title" data-i18n="president_role">رئيس الاتحاد</div>
+        <div class="president-message" data-i18n="president_message">
+        أتقدم باسمي وباسم أعضاء كيان اتحاد طلاب تحيا مصر برؤية طموحة لمستقبل يكون فيه الشباب القوة الدافعة للتغيير والإبداع، حيث نعمل على تمكينهم وتوجيه طاقاتهم نحو بناء مجتمع أكثر تقدمًا واستدامة، ونؤمن بأهمية تطوير مهاراتهم وتوفير المساحات التي تعزز من حضورهم الفعّال، كما نسعى إلى فتح آفاق جديدة تواكب طموحاتهم وتدعم أفكارهم الخلّاقة، ولذلك نشد على أيدي كل شاب يحمل حلمًا ويسعى لصنع الفرق في مجتمعه، لنمضي معًا نحو مستقبل يزدهر بعزيمة الشباب وإرادتهم.
+      </div>
+    </div>
+  </section>
 
   <section class="hero">
     <div class="content" data-aos="fade-down">

@@ -31,6 +31,9 @@ window.addEventListener('load', () => {
       button_text: "سجّل الآن",
       footer_text: "© 2025 اتحاد طلاب تحيا مصر. جميع الحقوق محفوظة.",
       social_title: "منصات اتحاد طلاب تحيا مصر الرسمية",
+      president_name: "مصطفى قطامش",
+      president_role: "رئيس الاتحاد",
+      president_message: "أتقدم باسمي وباسم أعضاء كيان اتحاد طلاب تحيا مصر برؤية طموحة لمستقبل يكون فيه الشباب القوة الدافعة للتغيير والإبداع، حيث نعمل على تمكينهم وتوجيه طاقاتهم نحو بناء مجتمع أكثر تقدمًا واستدامة، ونؤمن بأهمية تطوير مهاراتهم وتوفير المساحات التي تعزز من حضورهم الفعّال، كما نسعى إلى فتح آفاق جديدة تواكب طموحاتهم وتدعم أفكارهم الخلّاقة، ولذلك نشد على أيدي كل شاب يحمل حلمًا ويسعى لصنع الفرق في مجتمعه، لنمضي معًا نحو مستقبل يزدهر بعزيمة الشباب وإرادتهم.",
       ...Object.fromEntries(Array.from({ length: 20 }, (_, i) => [`image${i + 1}`, `صورة رقم ${i + 1}`]))
     },
     en: {
@@ -52,6 +55,9 @@ window.addEventListener('load', () => {
       button_text: "Apply Now",
       footer_text: "© 2025 Tahya Misr Student Union. All rights reserved.",
       social_title: "Official Social Platforms of Tahya Misr Student Union",
+      president_name: "Mostafa Katamesh",
+      president_role: "Union President",
+      president_message: "On behalf of myself and the members of the Tahya Misr Student Union, I present a bold vision for a future where youth are the driving force of change and creativity. We aim to empower them and guide their energy towards building a more advanced and sustainable society. We believe in developing their skills and providing platforms that enhance their active presence. We also strive to open new horizons that match their ambitions and support their creative ideas. Therefore, we stand with every young person who carries a dream and seeks to make a difference in their community. Let us move together towards a future that flourishes with the determination and will of youth.",
       ...Object.fromEntries(Array.from({ length: 20 }, (_, i) => [`image${i + 1}`, `Image #${i + 1}`]))
     }
   };
