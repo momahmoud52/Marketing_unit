@@ -27,7 +27,7 @@ window.addEventListener('load', () => {
       feature3_desc: "تمثيل شبابي فاعل يهدف إلى إيصال صوت الشباب في المحافل الكبرى محليًا ودوليًا، وتسليط الضوء على دورهم الحيوي في نهضة المجتمع وصناعة المستقبل.",
       gallery_title: "معرض الصور",
       cta_title: "انضم إلينا الآن",
-      cta_desc: "شاركنا الرحلة وكن جزءاً من التغيير الحقيقي داخل الجامعة.",
+      cta_desc: "شاركنا الرحلة وكن جزءاً من التغيير الحقيقي داخل المجتمع.",
       button_text: "سجّل الآن",
       footer_text: "© 2025 اتحاد طلاب تحيا مصر. جميع الحقوق محفوظة.",
       ...Object.fromEntries(Array.from({ length: 20 }, (_, i) => [`image${i + 1}`, `صورة رقم ${i + 1}`]))
@@ -47,7 +47,7 @@ window.addEventListener('load', () => {
       feature3_desc: "Active youth representation that aims to amplify the voices of young people in major national and international forums, while highlighting their vital role in driving societal progress and shaping the future.",
       gallery_title: "Gallery",
       cta_title: "Join Us Now",
-      cta_desc: "Join us and be part of the real change inside your university.",
+      cta_desc: "Join us on the journey and be part of real change within the community.",
       button_text: "Apply Now",
       footer_text: "© 2025 Tahya Misr Student Union. All rights reserved.",
       ...Object.fromEntries(Array.from({ length: 20 }, (_, i) => [`image${i + 1}`, `Image #${i + 1}`]))
